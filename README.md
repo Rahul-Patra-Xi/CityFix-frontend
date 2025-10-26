@@ -74,15 +74,15 @@ Check package.json to confirm the exact stack and scripts.
 ## Folder structure
 
 - src/
-   -App.css
-   -App.js
-   -App.test.js
-   -firebase.js
-   -index.css
-   -index.js
-   -logo.svg
-   -repottWebVitals.js
-   -setupTests.js
+   -App.css/
+   -App.js/
+   -App.test.js/
+   -firebase.js/
+   -index.css/
+   -index.js/
+   -logo.svg/
+   -repottWebVitals.js/
+   -setupTests.js/
   
 
 ## Build & deployment
