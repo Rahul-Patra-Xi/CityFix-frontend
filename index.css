@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(249, 250, 251);
+  color: rgb(17, 24, 39);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### **4. Setup Firebase Project**
+
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Click "Add project" or "Create a project"
+3. Follow the wizard (you can disable Google Analytics)
+4. Once created, click the **Web icon** (</>) to add a web app
+5. Register your app with a nickname like "CityFix"
+6. Copy the `firebaseConfig` object shown
+
+### **5. Enable Firebase Services**
+
+**Enable Firestore:**
+- In Firebase Console → Build → Firestore Database
+- Click "Create database"
+- Start in **test mode** (for development)
+- Choose a location closest to you
+
+**Enable Authentication:**
+- In Firebase Console → Build → Authentication
+- Click "Get started"
+- Go to "Sign-in method" tab
+- Enable **Anonymous** authentication
+
+### **6. Set Firestore Security Rules**
+
+In Firestore Database → Rules tab, paste this:
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /reports/{report} {
+      allow read, write: if true;
+    }
+  }
+} */
